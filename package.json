@@ -23,7 +23,8 @@
   "version": "0.1.0",
   "devDependencies": {
     "jest": "^26.0.1",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "jest-css-modules-transform": "^4.0.0"
   },
   "jest": {
     "moduleDirectories": [
