@@ -1,24 +1,44 @@
-# README
+##  Pipeline-Deals
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Dependencies & Technologies
 
-Things you may want to cover:
+- Ruby 2.5.1
+- Rails 6.0.3
+- React 16.13.1
 
-* Ruby version
+### Setup
 
-* System dependencies
+- Clone this repo
 
-* Configuration
+- Install Bundler gems
 
-* Database creation
+  ```
+  cd pipeline-deals
+  gem install bundler
+  bundle
+  ```
 
-* Database initialization
+- Install Yarn modules
 
-* How to run the test suite
+  ```
+  brew install yarn
+  yarn
+  ```
 
-* Services (job queues, cache servers, search engines, etc.)
+- Create a .env and set your API_KEY
+    ```
+    cp .env.example .env
+    ```
 
-* Deployment instructions
+### Testing
 
-* ...
+- Back-end: `rspec`
+- Front-end: `yarn test`
+
+### Starting
+
+```
+foreman start -f Procfile.dev
+```
+
+Visit http://localhost:3000/
